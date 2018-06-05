@@ -13,7 +13,9 @@ function showResults(json) {
 function forkRepo() {
   const repo = 'learn-co-curriculum/javascript-fetch-lab'
   //use fetch to fork it!
-  http://67.205.165.109:33848
+  fetch(repo).
+  then(res => res.json()).
+  then(json => console.log(json))
 }
 
 function getToken() {
